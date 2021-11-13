@@ -1,5 +1,7 @@
 import mongoose from "mongoose";
 
+import { IProfile } from "../interfaces/profile.interface";
+
 const { Schema } = mongoose;
 
 const schema = new Schema({
@@ -11,4 +13,4 @@ const schema = new Schema({
   prefered_cryptocurrency: String,
 });
 
-export const Profile = mongoose.model("Profile", schema);
+export const Profile = mongoose.model<IProfile>("Profile", schema);

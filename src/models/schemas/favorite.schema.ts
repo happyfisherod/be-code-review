@@ -1,5 +1,7 @@
 import mongoose from "mongoose";
 
+import { IFavorite } from "../interfaces/favorite.interface";
+
 const { Schema } = mongoose;
 
 const schema = new Schema(
@@ -15,4 +17,4 @@ const schema = new Schema(
   }
 );
 
-export const Favorite = mongoose.model("Favorite", schema);
+export const Favorite = mongoose.model<IFavorite>("Favorite", schema);

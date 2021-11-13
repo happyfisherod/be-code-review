@@ -1,8 +1,8 @@
 import mongoose from "mongoose";
 import _ from "lodash";
-import { Profile } from "../models/Profile";
-import { Simulator } from "../models/Simulator";
-import { Favorite } from "../models/Favorite";
+import { Profile } from "../models/schemas/profile.schema";
+import { Simulator } from "../models/schemas/simulator.schema";
+import { Favorite } from "../models/schemas/favorite.schema";
 import { DBURL } from "../config";
 
 (async () => {
