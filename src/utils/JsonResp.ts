@@ -10,7 +10,6 @@ export default class JsonResp {
         this.data = data;
         this.error = error;
     }
-
 }
 
 export class ErrorDetail {
